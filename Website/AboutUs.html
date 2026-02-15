@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="Images\Imouto-Clips-Logo-Small.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="Components/Header.js" defer></script>
+    <script src="Components/Navigation/Navigation.js" defer></script>
+    <script src="Components/Navigation/NavButton.js" defer></script>
+    <script src="Components/MoreButton.js" defer></script>
+    <script src="Components/Footer.js" defer></script>
+    <script src="Components/ContentContainer.js" defer></script>
+    <script src="Components/PageTitle.js" defer></script>
+    <script src="Components/Cards/StaffCard.js" defer></script>
+    <script src="Javascript/DivObserver.js" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+    <div class="ContentMain">
+        <navigation-frame></navigation-frame>
+
+        <div class="PageContent">         
+
+            <title-container>
+
+                <svg slot="icon" width="58" height="58" viewBox="0 0 100 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_118_453)">
+                        <path
+                            d="M50 100.2C36.644 100.2 24.088 95 14.644 85.556C5.2 76.112 0 63.556 0 50.2C0 36.844 5.2 24.288 14.644 14.844C24.088 5.40001 36.644 0.200012 50 0.200012C63.356 0.200012 75.912 5.40001 85.356 14.844C94.8 24.288 100 36.844 100 50.2C100 63.556 94.8 76.112 85.356 85.556C75.912 95 63.356 100.2 50 100.2ZM50 5.80001C25.518 5.80001 5.6 25.718 5.6 50.2C5.6 74.682 25.518 94.6 50 94.6C74.482 94.6 94.4 74.682 94.4 50.2C94.4 25.718 74.482 5.80001 50 5.80001Z"
+                            fill="var(--Secondary-Pink)" />
+                        <path
+                            d="M52.7 35.6H47.3C45.6431 35.6 44.3 36.9431 44.3 38.6V76.8C44.3 78.4568 45.6431 79.8 47.3 79.8H52.7C54.3568 79.8 55.7 78.4568 55.7 76.8V38.6C55.7 36.9431 54.3568 35.6 52.7 35.6Z"
+                            fill="var(--Secondary-Pink)" />
+                        <path
+                            d="M53.7 20.2H46.3C45.1954 20.2 44.3 21.0954 44.3 22.2V29.6C44.3 30.7046 45.1954 31.6 46.3 31.6H53.7C54.8046 31.6 55.7 30.7046 55.7 29.6V22.2C55.7 21.0954 54.8046 20.2 53.7 20.2Z"
+                            fill="var(--Secondary-Pink)" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_118_453">
+                            <rect width="100" height="100" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </title-container>
+
+            <!-- About us -->
+            <content-container class="divHiddenDown" title="Mission">
+                <!-- icon -->
+                <svg slot="icon" width="44" height="44" viewBox="0 0 84 84" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.6396 52.6831C39.6094 52.6831 39.5791 52.6814 39.5489 52.6781C39.2549 52.6445 39.0096 52.4496 38.9088 52.1707L37.0759 47.0417L31.8125 45.6456C31.5252 45.57 31.3118 45.3415 31.253 45.0509C31.1942 44.7602 31.3034 44.4679 31.5386 44.2865L35.8495 40.9584L35.5522 35.5202C35.5354 35.2246 35.6866 34.949 35.9453 34.8046C36.204 34.6584 36.5165 34.6718 36.7618 34.8398L41.2591 37.9109L46.3394 35.947C46.6166 35.8394 46.9224 35.8982 47.1408 36.0982C47.3592 36.2981 47.4432 36.6005 47.3592 36.8844L45.8287 42.1109L49.266 46.3361C49.4525 46.5662 49.4928 46.8754 49.3702 47.1458C49.2458 47.4163 48.9854 47.5877 48.6898 47.5978L43.2466 47.7574L40.2914 52.332C40.147 52.5554 39.905 52.6865 39.6446 52.6865L39.6396 52.6831ZM32.9028 44.7182L37.5833 45.9598C37.8302 46.0253 38.0268 46.2067 38.1125 46.447L39.7421 51.0065L42.3696 46.9392C42.509 46.7242 42.7426 46.5931 42.9979 46.5864L47.8363 46.4453L44.7804 42.6905C44.6191 42.4922 44.567 42.2285 44.6376 41.9849L45.9984 37.338L41.4826 39.0835C41.2457 39.1759 40.9786 39.144 40.7686 39.0012L36.7702 36.2712L37.0356 41.1062C37.049 41.3599 36.9382 41.6052 36.7366 41.7614L32.9045 44.7199L32.9028 44.7182Z"
+                        fill="var(--Primary-Pink)" />
+                    <path
+                        d="M38.4199 64.0046C38.3611 64.0046 38.3006 64.0013 38.2402 63.9946C37.6589 63.9274 37.1767 63.5443 36.9802 62.9933L32.6508 50.8822L20.2188 47.5826C19.6543 47.4331 19.231 46.9829 19.115 46.41C18.9991 45.8371 19.2158 45.2592 19.6778 44.903L29.8586 37.0423L29.1547 24.1987C29.1228 23.6158 29.4185 23.0748 29.9275 22.7875C30.4366 22.5002 31.0531 22.5271 31.5353 22.8564L42.1579 30.109L54.1548 25.4705C54.6991 25.2588 55.3056 25.3747 55.7357 25.7695C56.1658 26.1643 56.3304 26.759 56.1674 27.3202L52.5521 39.6631L60.6698 49.639C61.0394 50.0926 61.1167 50.7041 60.8731 51.235C60.6295 51.7658 60.1154 52.1069 59.5308 52.1237L46.6738 52.5L39.695 63.3041C39.4111 63.7442 38.9323 64.0013 38.4182 64.0013L38.4199 64.0046ZM22.0702 45.8153L33.5446 48.8611C34.0301 48.9905 34.4198 49.3483 34.5895 49.8221L38.5862 61.0008L45.029 51.0283C45.3012 50.6066 45.7649 50.3462 46.2655 50.3311L58.133 49.985L50.6386 40.777C50.3227 40.3872 50.2169 39.8681 50.358 39.3859L53.6945 27.9922L42.6199 32.2745C42.1512 32.4559 41.6254 32.3938 41.2104 32.1115L31.4059 25.4167L32.0561 37.2708C32.083 37.7714 31.8629 38.2536 31.4647 38.561L22.0685 45.817L22.0702 45.8153Z"
+                        fill="var(--Primary-Pink)" />
+                    <path
+                        d="M36.7248 80.052C36.6123 80.052 36.5014 80.0453 36.3871 80.0319C35.2918 79.9059 34.3812 79.1818 34.0083 78.1435L26.2601 56.4732L4.01689 50.5714C2.95177 50.2891 2.15377 49.4407 1.93537 48.3605C1.71697 47.2803 2.12353 46.1899 2.99713 45.5146L21.2117 31.4496L19.9517 8.47059C19.8912 7.37019 20.4507 6.34875 21.4116 5.80779C22.3726 5.26683 23.5351 5.31723 24.4457 5.93883L43.4515 18.9168L64.9169 10.6176C65.9451 10.2195 67.0891 10.4362 67.9006 11.1821C68.712 11.928 69.0245 13.0503 68.7137 14.107L62.244 36.1923L76.7693 54.0423C77.4648 54.8974 77.6127 56.0515 77.154 57.0545C76.6954 58.0575 75.7243 58.7009 74.6223 58.7328L51.6197 59.4048L39.1323 78.7349C38.5963 79.5648 37.6942 80.0503 36.7231 80.0503L36.7248 80.052ZM7.68769 47.2013L28.0107 52.5941C28.9263 52.8377 29.6621 53.5147 29.9813 54.4068L37.0608 74.2056L48.4697 56.5438C48.9821 55.7491 49.8557 55.2569 50.8015 55.23L71.8183 54.6151L58.5463 38.3057C57.9483 37.5699 57.7517 36.5904 58.0171 35.6815L63.9274 15.5031L44.3151 23.0866C43.4314 23.4276 42.4385 23.3134 41.6573 22.7791L24.2928 10.9217L25.4436 31.9167C25.4957 32.8608 25.0791 33.7714 24.3298 34.351L7.68769 47.2013Z"
+                        fill="var(--Primary-Pink)" />
+                </svg>
+
+                <!-- content-->
+                <div class="AboutUsContent" slot="content"
+                    style="align-self: stretch; padding-left: 10px; padding-right: 10px; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; display: inline-flex">
+                    <div
+                        style="padding-left: 10px; padding-right: 10px; padding-top: 25px; padding-bottom: 25px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+                        <div
+                            style="width: 1032px; text-align: center; justify-content: center; display: flex; flex-direction: column;">
+                            <p>Our mission is to help advertise smaller vtubers and help them reach their dreams and
+                                goals.<br />We create clips, both in short form and long form, and also commemorative or
+                                promotional videos.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </content-container>
+
+            <content-container class="divHiddenDown" title="Staff">
+
+                <svg slot="icon" width="44" height="44" viewBox="0 0 84 84" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M70.0526 75.8553C71.2941 75.8553 72.2215 74.7012 71.9426 73.4916C69.0765 61.031 56.7605 51.6633 42 51.6633C27.2395 51.6633 14.9251 61.0327 12.0573 73.4916C11.7785 74.7012 12.7058 75.8553 13.9473 75.8553H70.0509H70.0526Z"
+                        fill="var(--Primary-Pink)" />
+                    <path
+                        d="M42.1445 48.7771C53.3648 48.7771 62.4607 39.6812 62.4607 28.4609C62.4607 17.2405 53.3648 8.14465 42.1445 8.14465C30.9241 8.14465 21.8282 17.2405 21.8282 28.4609C21.8282 39.6812 30.9241 48.7771 42.1445 48.7771Z"
+                        fill="var(--Primary-Pink)" />
+                </svg>
+
+                <div slot="content" data-layer="Staff Content" class="StaffContent"
+                    style="align-self: stretch; padding-left: 10px; padding-right: 10px; padding-top: 25px; padding-bottom: 25px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+
+                    <staff-card img="/Images/Staff/Funky.jpg" name="Funky" role="Editor/Designer">
+
+                        <svg slot="X" class="ColorSVGLinkSmall" width="30" height="30" viewBox="0 0 63 63" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://x.com/Thefunkydealer" target="_blank">
+                                <g clip-path="url(#clip0_87_91)">
+                                    <path
+                                        d="M49.5961 0H13.4039C6.00112 0 0 6.00112 0 13.4039V49.5961C0 56.9989 6.00112 63 13.4039 63H49.5961C56.9989 63 63 56.9989 63 49.5961V13.4039C63 6.00112 56.9989 0 49.5961 0Z"
+                                        fill="black" />
+                                    <path
+                                        d="M36.0524 27.7314L53.9305 6.94891H49.6944L34.1699 24.9934L21.7715 6.94891H7.47052L26.2206 34.2367L7.47052 56.0297H11.7079L28.1018 36.9735L41.1957 56.0297H55.4967L36.0524 27.7314ZM30.2488 34.4761L28.3487 31.7583L13.2338 10.138H19.7417L31.9397 27.5865L33.8398 30.3043L49.6956 52.9855H43.1877L30.2488 34.4774V34.4761Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_87_91">
+                                        <rect width="63" height="63" fill="none" />
+                                    </clipPath>
+                                </defs>
+                            </a>
+                        </svg>
+
+                        <svg slot="YT" class="ColorSVGLinkSmall" width="30" height="30" viewBox="0 0 89 62" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <a href="https://www.youtube.com/@TheFunkyDealer" target="_blank">
+                                <g clip-path="url(#clip0_85_75)">
+                                    <path
+                                        d="M87.1399 9.68208C86.1146 5.86841 83.1029 2.87309 79.2705 1.85104C72.3339 0 44.5 0 44.5 0C44.5 0 16.6679 0 9.72948 1.85281C5.89714 2.87309 2.88716 5.87018 1.86188 9.68385C0 16.5867 0 31 0 31C0 31 0 45.4133 1.86188 52.3179C2.88716 56.1316 5.89892 59.1269 9.72948 60.1472C16.6679 62 44.5 62 44.5 62C44.5 62 72.3339 62 79.2705 60.1472C83.1029 59.1269 86.1128 56.1298 87.1399 52.3179C89.0018 45.4133 89.0018 31 89.0018 31C89.0018 31 88.9947 16.5867 87.1399 9.68208Z"
+                                        fill="#ED2224" />
+                                    <path d="M32.9389 44.2832L56.0611 31L32.9389 17.7168V44.2832Z" fill="white" />
+                                </g>
+                            </a>
+                        </svg>
+
+                    </staff-card>
+
+                </div>
+
+            </content-container>
+
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+.modal {
+    min-width: 500px;
+    padding: 15px;
+    background: #FCEFEE;
+    border-radius: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: inline-flex;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+
+
+    max-width: 80%;
+
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    /*display: none; /* Hidden by default */
+}
+
+.ModalCardsContainer {
+    align-self: stretch;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* height: 354px; */
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: var(--Secondary-Pink);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.modal.modalActive {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-close-button {
+     z-index: 5;
+     width: 44px;
+    height: 44px;
+    display: inline-block;
+
+    cursor: pointer;
+    background: none;
+
+
+     border: 3px solid var(--Primary-Pink);
+         border-radius: 10px;
+
+    transition: all 100ms ease-in-out;
+}
+
+.modal-close-button:hover {
+    background-color: var(--Primary-Pink);
+    scale: 1.2;
+}
+
+.modal-close-button:hover .modal-close-buttonGFX path {
+    fill: var(--Secondary-Pink);
+}
+
+.modal-content {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+    z-index: 5;
+    pointer-events: none;
+    /* Prevent interaction with the overlay */
+}
+
+#overlay.modalActive {
+    opacity: 1;
+    pointer-events: auto;
+    /* Allow interaction when active */
+}
+
+.modal.show {
+    display: block;
+    /* Show the modal when the "show" class is added */
+}

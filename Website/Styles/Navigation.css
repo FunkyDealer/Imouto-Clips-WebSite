@@ -1,0 +1,75 @@
+.NavigationWrap {
+     /* min-height: 200vh; */
+    /* background-color: #6196E5; */
+    align-items: center;
+
+min-height: 100%;
+}
+
+.NavigationMaster { 
+   position: sticky;
+    top: 10px;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    /* background: #ABD7F4; */
+}
+
+.NavButtonBlue {
+    width: 227px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background: linear-gradient(90deg, #F1F8FC 0%, #ABD7F4 100%);
+    box-shadow: -4px 4px 5px #a57a8d;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    display: inline-flex;
+    scale: 1;
+    
+}
+
+.ButtonText {
+    width: 151px;
+    height: 30px;
+    text-align: right;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #6196E5;
+    font-size: 32px;
+    -webkit-user-select:none;
+    user-select:none;
+}
+
+.GoUpButtonFrame {
+ 
+    scale: 1;
+
+    transition: all 250ms ease-in-out;
+}
+
+.GoUpButtonFrame:hover {
+    scale: 1.2;
+    filter: contrast(50%);
+}
+
+.inactive {
+      filter: saturate(25%);
+}
+
+.active {
+  cursor: pointer;
+  scale: 1;
+
+  transition: all 250ms ease-in-out;
+}
+
+.active:hover {
+scale: 1.2;
+ background: linear-gradient(90deg, #F1F8FC 99%, #ABD7F4 100%);
+}

@@ -1,0 +1,11 @@
+.decoloredLinkSVG {
+    scale: 1;
+
+    transition: scale 250ms ease-in-out, filter 250ms ease-in-out;
+}
+
+.decoloredLinkSVG:hover {
+    scale: 1.2;
+    z-index: 2;
+    filter: invert(100%) ;
+}

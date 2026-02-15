@@ -1,0 +1,37 @@
+.ButtonFramePink {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: linear-gradient(90deg, #FDE8F2 0%, #FAB5D4 100%);
+    box-shadow: 4px 4px 5px rgba(206, 134, 196, 0.8);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    display: inline-flex;
+
+    scale: 1;
+    cursor: pointer;
+
+    transition: all 250ms ease-in-out;
+}
+
+.ButtonFramePink:hover {
+    scale: 1.1;
+   background: linear-gradient(90deg, #FDE8F2 99%, #FAB5D4 100%);
+
+   animation-name: gradient;
+}
+
+@keyframes gradientAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+    
+@keyframes gradient {    
+  0% {background-position: 0% 50%}
+  100% {background-position: 100% }
+}

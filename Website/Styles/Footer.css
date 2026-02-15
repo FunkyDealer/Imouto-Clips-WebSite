@@ -1,0 +1,13 @@
+.Footer {
+    width: 100vw;
+    align-self: stretch;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: linear-gradient(90deg, #9ACFF1 0%, #C5E3F6 100%);
+        outline: 3px #6196E5 solid;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        display: inline-flex;
+}

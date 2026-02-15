@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthdays</title>
+    <link rel="icon" type="image/x-icon" href="Images\Imouto-Clips-Logo-Small.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/calendar.css">
+    <link rel="stylesheet" href="Styles/Modal.css">
+    <script src="Components/Header.js" defer></script>
+    <script src="Components/Navigation/Navigation.js" defer></script>
+    <script src="Components/Navigation/NavButton.js" defer></script>
+    <script src="Components/Footer.js" defer></script>
+    <script src="Components/Calendar/CalendarRow.js" defer></script>
+    <script src="Components/Calendar/Day.js" defer></script>
+    <script src="Javascript/calendar.js" defer></script>
+    <script src="Javascript/modal.js" defer></script>
+    <script src="Components/Cards/VtuberCard.js"></script>
+    <script src="Components/Cards/Icon Links/SocLinks.js"></script>
+    <script src="Javascript/DivObserver.js" defer></script>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <!-- <div id="modal" class="modal">
+  <div class="modal-header">
+    <div id="modalTitle" class="modal-title">example</div>  
+  <button data-close-button class="modal-close-button">&times;</button>
+  </div>
+  <div id="modalContent" class="modal-content">
+    example
+  </div>
+</div> -->
+
+    <div id="modal" class="modal">
+        <div class="TopContainer"
+            style="display: grid; align-self: stretch; height: 77px; position: relative; background: linear-gradient(90deg, #FC5C9C 0%, #FB3282 100%); border-top-left-radius: 10px; border-top-right-radius: 10px">
+            <div class="Closebutton"
+                style="width: 470px; height: 77px; padding-right: 25px; left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-end; display: inline-flex">
+                <div class="Closebutton"
+                    style="flex-direction: column; justify-content: center; align-items: flex-start; display: flex">
+
+                    <button data-close-button class="modal-close-button">
+                    <svg class="modal-close-buttonGFX" width="22" height="22" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M52.3896 44.5571C50.9779 43.1453 50.9779 40.8547 52.3896 39.4429L82.3841 9.44849C84.5386 7.29395 84.5386 3.77045 82.3841 1.61591C80.2296 -0.538636 76.7061 -0.538636 74.5515 1.61591L44.5571 31.6104C43.1453 33.0221 40.8547 33.0221 39.4429 31.6104L9.44849 1.61591C7.29395 -0.538636 3.77045 -0.538636 1.61591 1.61591C-0.538636 3.77045 -0.538636 7.29395 1.61591 9.44849L31.6104 39.4429C33.0221 40.8547 33.0221 43.1453 31.6104 44.5571L1.61591 74.5515C-0.538636 76.7061 -0.538636 80.2296 1.61591 82.3841C3.77045 84.5386 7.29395 84.5386 9.44849 82.3841L39.4429 52.3896C40.8547 50.9779 43.1453 50.9779 44.5571 52.3896L74.5515 82.3841C76.7061 84.5386 80.2296 84.5386 82.3841 82.3841C84.5386 80.2296 84.5386 76.7061 82.3841 74.5515L52.3896 44.5571Z"
+                            fill="var(--Secondary-Pink)" />
+                    </svg>
+                    </button>
+
+                </div>
+            </div>
+            <div class="Datecontainer"
+                style="width: 470px; height: 77px; padding-top: 10px; padding-bottom: 10px; left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: center; display: inline-flex">
+                <div id="ModalDate" class="ModalMonth"
+                    style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 32px; font-family: Fredoka; font-weight: 500; word-wrap: break-word">
+                    25 December 2025</div>
+                <div id="MonthWeekDay" class="ModalDayOfTheWeek"
+                    style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 16px; font-family: Fredoka; font-weight: 400; word-wrap: break-word">
+                    Monday</div>
+            </div>
+        </div>
+        <div id="modalContent" class="ModalCardsContainer">
+            <slot></slot>
+        </div>
+    </div>
+
+
+    <div id="overlay"></div>
+
+    <div class="ContentMain">
+
+        <navigation-frame></navigation-frame>
+
+        <div class="PageContent"
+            style="padding: 25px 18px; background: white; border-radius: 20px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 10px; display: inline-flex">
+
+            <div
+                style="align-self: stretch; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+                <div
+                    style="width: 685px; height: 76px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                    <p>The birthday calendar catalogs the known birthdays of all the talents featured in the vtuber
+                        page, click the arrows to change the current month</p>
+                </div>
+            </div>
+
+            <div class="CalendarMaster divHiddenDown">
+                <div class="TitlesContainer"
+                    style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                    <div
+                        style="align-self: stretch; background: #FC5C9C; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
+                        <div class="Calendartext"
+                            style="padding-top: .5em; padding-bottom: .5em; text-align: center; color: white; display: flex; flex-direction: column; justify-content: center;">
+                            <h1>Birthday calendar</h1>
+                        </div>
+                    </div>
+                    <div class="MonthContainer"
+                        style="align-self: stretch; padding: 0 10px; background: #FCCDE2; overflow: hidden; justify-content: center; align-items: center; gap: 100px; display: inline-flex">
+
+                        <!-- Nav Button Previous -->
+                        <div class="CalendarNavButtonContainer">
+                            <button data-prevMonth-button class="CalendarButton">
+
+                                <svg class="CalendarButtonGFX" width="50" height="50" viewBox="0 0 85 85" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_233_956)">
+                                        <path
+                                            d="M23.2645 39.2989C23.2645 39.2989 23.2815 39.2836 23.2883 39.2751C23.2968 39.2666 23.3036 39.2581 23.3121 39.2513L55.2823 7.28111C57.0571 5.50631 59.959 5.50631 61.7338 7.28111C63.5086 9.05591 63.5086 11.9578 61.7338 13.7326L32.9409 42.5255L61.6862 71.2708C63.461 73.0456 63.461 75.9475 61.6862 77.7223C59.9114 79.4971 57.0095 79.4971 55.2347 77.7223L23.2645 45.7521C21.4897 43.9773 21.4897 41.0754 23.2645 39.3006V39.2989Z"
+                                            fill="#FC5C9C" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_233_956">
+                                            <rect width="85" height="85" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <!-- Nav Button Previous End -->
+
+                        <div class="MonthYear"
+                            style="padding: 0 35px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; display: inline-flex">
+                            <div class="Month"
+                                style="padding: 0 4px; flex-direction: column; justify-content: flex-start; align-items: center; display: flex">
+                                <div class="MonthText" id="month">
+                                    <slot>August</slot>
+                                </div>
+                            </div>
+                            <div class="Year"
+                                style="overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                                <div class="Yeartext" id="year">
+                                    <slot>2026</slot>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav Button Next -->
+                        <div class="CalendarNavButtonContainer">
+                            <button data-nextMonth-button class="CalendarButton">
+                                <svg class="CalendarButtonGFX" width="50" height="50" viewBox="0 0 85 85" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_233_955)">
+                                        <path
+                                            d="M61.7338 39.2989C61.7338 39.2989 61.7168 39.2836 61.71 39.2751C61.7015 39.2666 61.6947 39.2581 61.6862 39.2513L29.716 7.28111C27.9412 5.50631 25.0393 5.50631 23.2645 7.28111C21.4897 9.05591 21.4897 11.9578 23.2645 13.7326L52.0574 42.5255L23.3121 71.2708C21.5373 73.0456 21.5373 75.9475 23.3121 77.7223C25.0869 79.4971 27.9888 79.4971 29.7636 77.7223L61.7338 45.7521C63.5086 43.9773 63.5086 41.0754 61.7338 39.3006V39.2989Z"
+                                            fill="var(--Primary-Pink)" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_233_955">
+                                            <rect width="85" height="85" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </button>
+                        </div>
+                        <!-- Nav Button Next End -->
+                    </div>
+                </div>
+                <div class="CalendarDisplay"
+                    style="padding: 0 15px; background: #FCCDE2; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: flex">
+                    <div class="WeekDaysContainer"
+                        style="padding-left: 2px; padding-right: 2px; background: #FC5C9C; overflow: hidden; justify-content: flex-start; align-items: center; gap: 5px; display: inline-flex">
+
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Monday</p>
+                            </div>
+                        </div>
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Tuesday</p>
+                            </div>
+                        </div>
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Wednesday</p>
+                            </div>
+                        </div>
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Thursday</p>
+                            </div>
+                        </div>
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Friday</p>
+                            </div>
+                        </div>
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Saturday</p>
+                            </div>
+                        </div>
+                        <div class="Weekday">
+                            <div class="Daytext">
+                                <p>Sunday</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="DaysFragmentContainer"
+                        style="    padding-right: 15px; padding-left: 15px; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: center; display: flex">
+                        <div id="calendar" class="calendar">
+
+                            <!-- Script places Days-->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+</body>
+
+</html>

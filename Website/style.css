@@ -1,0 +1,360 @@
+:root {
+    --Primary-Blue: #6196E5;
+    --Secondary-Blue: #C5E3F6;
+    --Primary-Pink: #FC5C9C;
+    --Secondary-Pink: #FCCDE2;
+    --Primary-BG: #FCEFEE;
+    --Logo-Color: #3D414D;
+    --Pink-Dark-Linear-Grad: linear-gradient(90deg, var(--Primary-Pink) 25%, #f82479 100%);
+    --Pink-Light-Linear-Grad: linear-gradient(90deg, #f8c5dc 25%, var(--Primary-Pink) 100%);
+}
+
+@font-face {
+    font-family: Fredoka-One;
+    /* set name */
+    src: url(Fonts/Fredoka/fredoka-one.one-regular.ttf) format("truetype");
+    ;
+    /* url of the font */
+}
+
+@font-face {
+    font-family: Fredoka;
+    font-weight: 400;
+    src: url(Fonts/Fredoka/Fredoka-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Fredoka;
+    /* set name */
+    font-weight: 500;
+    src: url(Fonts/Fredoka/Fredoka-Medium.ttf) format("truetype");
+    ;
+    /* url of the font */
+
+}
+
+@font-face {
+    font-family: Fredoka;
+    /* set name */
+    font-weight: Light;
+    src: url(Fonts/Fredoka/Fredoka-Light.ttf) format("truetype");
+    ;
+    /* url of the font */
+
+}
+
+h1 {
+    font-weight: 500;
+    font-family: Fredoka-One;
+    font-size: 48px;
+    word-wrap: normal;
+    margin: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-weight: 400;
+    font-family: Fredoka-One;
+    font-size: 36px;
+    word-wrap: break-word;
+    margin: 0;
+    line-height: 1;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 32px;
+    font-family: Fredoka;
+    word-wrap: break-word;
+    margin: 0;
+    line-height: 1;
+}
+
+h4 {
+    font-family: Fredoka;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1;
+}
+
+p {
+    font-family: Fredoka;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+}
+
+small {
+    font-family: Fredoka;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1;
+}
+
+body {
+    padding: 0px;
+    width: 100vw;
+    background: white;
+    flex-direction: column;
+    display: inline-flex;
+    align-self: stretch;
+    margin: 0;
+}
+
+.ContentMain {
+    align-self: stretch;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    background-color: #FCCDE2;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #FCCDE2 20%, #FCCDE2 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #FCCDE2 20%, #FCCDE2 80%, transparent 80%, transparent) 80px 80px, linear-gradient(#FCEFEE 6.4px, transparent 6.4px) 0 -3.2px, linear-gradient(90deg, #FCEFEE 6.4px, #FCCDE2 6.4px) -3.2px 0;
+    background-size: 160px 160px, 160px 160px, 80px 80px, 80px 80px;
+    /* background: linear-gradient(180deg, #FCCDE2 59%, #e4acc5 100%); */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    display: inline-flex;
+}
+
+.PageContent {
+    background: var(--Secondary-Pink);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    display: inline-flex
+}
+
+.CardContainer {
+    align-self: stretch;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.LinkLogoText {
+    align-self: stretch;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    transition: all 250ms ease-in-out;
+    transform: translateY(-2em);
+    opacity: 0;
+}
+
+.LinkLogoDiv:hover .LinkLogoText {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.LinkLogoDiv {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.ColorSVGLink {
+    scale: 1;
+
+    transition: scale 250ms ease-in-out, filter 250ms ease-in-out;
+}
+
+.ColorSVGLink:hover {
+    scale: 1.2;
+    z-index: 2;
+    filter: drop-shadow(0px 0px 10px var(--Primary-Pink))
+}
+
+.ColorSVGLinkSmall {
+    scale: 1;
+
+    transition: scale 250ms ease-in-out, filter 250ms ease-in-out;
+}
+
+.ColorSVGLinkSmall:hover {
+    scale: 1.2;
+    z-index: 2;
+}
+
+.Carousel {
+    width: 1098px;
+    height: 597px;
+    left: 0.50px;
+    top: 0px;
+    position: absolute;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overflow: hidden;
+
+    filter: brightness(50%);
+}
+
+.Carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.ImageContainer {
+    flex: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    animation: spin 100s infinite linear;
+}
+
+.ImageCard {
+    flex: 0 0 5em;
+    align-self: stretch;
+    height: 617.63px;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.VtuberCard {
+    background: linear-gradient(180deg, white 0%, #C5E3F6 100%);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    outline: 4px var(--Primary-Pink) solid;
+    outline-style: outset;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: inline-flex;
+
+    scale: 1;
+    z-index: 1;
+    transition: all 500ms ease-out;
+}
+
+.VtuberCard:hover {
+    scale: 1.1;
+    z-index: 99;
+
+     box-shadow: 0 0 15px #f852c1, 0 0 15px #f852c1, 0 0 15px #f852c1,
+   0 0 15px #f852c1;
+
+    animation: glow 500ms infinite alternate;
+}
+
+@keyframes glow {
+ from {
+   box-shadow: 0 0 15px #fa63fa, 0 0 15px #fa63fa 0 0 15px #fa63fa,
+     0 0 15px #ff00ff;
+ }
+ to {
+   box-shadow: 0 0 15px #4871e2, 0 0 15px #4871e2, 0 0 15px #4871e2,
+     0 0 15px #4871e2;
+ }
+}
+
+.cardShow {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+
+    transition: all 750ms 100ms ease-in-out;
+}
+
+.cardHidden {
+    opacity: 0;
+    transform: translateY(25px);
+
+    pointer-events: none;
+}
+
+.divShow {
+    opacity: 1;
+
+    transition: transform 750ms ease-in-out, opacity 1s ease-in-out;
+   
+}
+
+.divHiddenLeft {
+    opacity: 0;
+    transform: translateX(20%);
+}
+
+.divHiddenRight {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.divHiddenDown {
+    opacity: 0;    
+    transform: translateY(0.5in);
+}
+
+.onLoadShow {
+    scale: 1;
+
+    animation-name: translateTop, myOpacity;
+    animation-duration: 1s, 1s;
+    animation-timing-function: ease-in-out, ease-in;
+}
+
+.onScrollShowTab {
+    animation-name: translateSide;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes translateTop {
+    from {
+        transform: translateY(25%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes myOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
+
+@keyframes translateSide {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
