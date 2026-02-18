@@ -243,8 +243,12 @@ class Vtuber {
     }
 }
 
-const myModal = document.getElementById("modal");
-const myOverlay = document.getElementById('overlay');
+const modalElement = document.querySelector("modal-component");
+const myModal = modalElement.shadowRoot.getElementById("modal");
+const myOverlay = modalElement.shadowRoot.getElementById("overlay");
+
+// const myModal = document.getElementById("modal");
+// const myOverlay = document.getElementById('overlay');
 
 function BirthdayClick(birthday , day) {
     if (birthday) {
@@ -282,8 +286,7 @@ function OpenModal(day) {
         modalContent.append(CreateVtuberCard(element));
     });    
 
-    myModal.classList.add('modalActive');
-    myOverlay.classList.add('modalActive');  
+    modalElement.open();
 }
 
 function CreateVtuberCard(vtuber) {

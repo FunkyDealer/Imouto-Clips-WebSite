@@ -2,14 +2,15 @@
 const featuredDiv = document.getElementById("featured");
 const recommendedDiv = document.getElementById("other");
 const randomlyPicked = document.getElementById("random");
+const ClipOfTheDay = document.getElementById("ClipOfTheDay");
 
 const readyEvent = new CustomEvent("VtubersPopulated");
 
 window.addEventListener("VtubersLoaded", () => {
-    console.log("Data Loaded");
     if (featuredDiv) LoadFeatured();
     if (recommendedDiv) LoadRecommended();
     if (randomlyPicked) LoadRandom();
+    if (ClipOfTheDay) LoadRandomClipofTheDay();
 
     window.dispatchEvent(readyEvent);
 });
@@ -18,7 +19,6 @@ function LoadFeatured() {
     if (featuredDiv) {
         const length = Vtubers.length;
         if (length > 0) {
-            //console.log("Loading Featured, Vtubers list has " + length + " elements");
 
             Vtubers.forEach((v) => {
                 if (v.Category == 1) {
@@ -27,7 +27,7 @@ function LoadFeatured() {
                 }
             });
 
-            console.log("featured loaded");
+            //console.log("featured loaded");
         }
         else {
             console.log("Vtubers list was empty");
@@ -50,7 +50,7 @@ function LoadRecommended() {
                 }
             });
 
-            console.log("Recommended loaded");
+          //  console.log("Recommended loaded");
         }
         else {
             console.log("Vtubers list was empty");
@@ -67,10 +67,7 @@ function LoadRandom() {
         if (length > 0) {
            // let randomNr = Math.floor(Math.random() * length);
 
-            const startTime = performance.now();
             const randomNr = generateRandomNumbers(3, 0, length - 1);
-            const endTime = performance.now();
-            console.log(`Call took ${endTime - startTime} milliseconds`);
 
             for (let i = 0; i < 3; i++) {
                 randomlyPicked.append(CreateVtuberCard(Vtubers[randomNr[i]]));
@@ -83,6 +80,54 @@ function LoadRandom() {
     else {
         console.log("Random was not found");
     }
+}
+
+function LoadRandomClipofTheDay()
+{
+    if (ClipOfTheDay) {
+
+        const length = Vtubers.length;
+        if (length > 0) {
+
+            let clips = [];
+
+            Vtubers.forEach(v => {
+
+                if (v.Category == 1 && v.clip != null && v.clip.length > 15) {
+                    clips.push(v.clip);
+                }
+            });
+
+            const clipLength = clips.length;
+            if (clipLength > 0) {
+                const rClipnr = Math.floor(getDailyRandom() * (clipLength-1));
+
+                //load clip               
+                const myClip = document.createElement("iframe-video");
+                myClip.setAttribute("link", clips[rClipnr]);
+                myClip.slot="ClipOfTheDay";
+                
+                ClipOfTheDay.append(myClip);
+            }
+        }     
+    }
+}
+
+function getDailyRandom() {
+  const today = new Date();
+  const seed =
+    today.getFullYear() * 10000 +
+    (today.getMonth() + 1) * 100 +
+    today.getDate();
+
+
+
+  return seededRandom(seed);
+}
+
+function seededRandom(seed) {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
 }
 
 function generateRandomNumbers(count, min, max) {
@@ -111,12 +156,17 @@ function CreateVtuberCard(vtuber) {
 
     const img = "./Database/VtubersImages/" + vtuber.imgFileName;
 
-    // console.log(vtuber.imgFileName);
-    //  console.log(img);
-
     card.setAttribute("img", img);
 
     const links = [];
+
+    if (vtuber.Category == 1 && vtuber.clip != null && vtuber.clip.length > 15) {
+        const clip = document.createElement("clip-link");
+        clip.setAttribute("link", vtuber.clip);
+        clip.setAttribute("name", vtuber.fullName);
+        clip.slot="clip";
+        links.push(clip);
+    }
 
     if (vtuber.twitch.length > 13) {
         const twitch = document.createElement("twitch-link");

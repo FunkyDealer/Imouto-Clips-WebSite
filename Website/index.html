@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="Images\Imouto-Clips-Logo-Small.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/Modal.css">
     <script src="Components/Header.js" defer></script>
     <script src="Components/Navigation/Navigation.js" defer></script>
     <script src="Components/Navigation/NavButton.js" defer></script>
     <script src="Components/MoreButton.js" defer></script>
     <script src="Components/Footer.js" defer></script>
+    <script src="Components/Modal/ModalComponent.js" defer></script>
     <script src="Components/ContentContainer.js" defer></script>
     <script src="Components/Cards/VtuberCard.js" defer></script>
     <script src="Components/Cards/Icon Links/SocLinks.js" defer></script>
@@ -21,6 +24,26 @@
 </head>
 
 <body>
+
+    <modal-component width="880">
+
+        <div slot="title" class="TitleContainer"
+            style="width: 880px; height: 77px; padding-bottom: 10px; left: 0px; top: 0px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+            <div id="title" class="Talentname"
+                style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: white">
+                <h1>Tenshie Mishie</h1>
+            </div>
+        </div>
+        </div>
+
+        <div slot="content" id="videoFrame" data-layer="ModalVideoContainer" class="Modalvideocontainer">            
+            <slot name="videoFrame">
+                <img style="width: 880px; height: 495px" src="https://placehold.co/880x495" />
+            </slot>
+        </div>
+
+    </modal-component>
+
     <header-component></header-component>
 
     <div class="ContentMain">
@@ -28,7 +51,8 @@
 
         <div class="PageContent">
 
-            <div class="CallToActionTab onLoadShow" style="border-radius: 15px; overflow: hidden; width: 1098px; height: 597px; position: relative;">
+            <div class="CallToActionTab onLoadShow"
+                style="border-radius: 15px; overflow: hidden; width: 1098px; height: 597px; position: relative;">
                 <div class="Carousel">
 
                     <div class="ImageContainer">
@@ -278,14 +302,14 @@
                                     <div class="LinkLogoText">
                                         <p>BlueSky</p>
                                     </div>
-                                </div>                              
+                                </div>
                             </div>
                         </div>
 
-                      
+
                         <div class="MoreButtonContainer"
                             style="align-self: stretch; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
-                             <!--More Button-->
+                            <!--More Button-->
                             <more-button link="AboutUs.html">
 
                                 <svg width="38" height="38" viewBox="0 0 84 84" fill="none"
@@ -353,7 +377,7 @@
                     style="align-self: stretch; padding: 10px; flex-direction: column; justify-content: center; align-items: flex-end; gap: 10px; display: inline-flex">
                     <div id="random" class="CardContainer">
 
-                    <!-- randomly selected by script-->
+                        <!-- randomly selected by script-->
 
                     </div>
                     <!--More Button-->
@@ -384,7 +408,54 @@
 
             </content-container>
 
+
+            <content-container class="divHiddenDown" title="Clip of the day">
+
+                <svg slot="icon" width="43" height="43" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M29.024 72.502L14.376 86.332C13.522 87.138 13.482 88.498 14.29 89.352C15.096 90.206 16.456 90.246 17.31 89.438L35.248 72.502H29.024Z"
+                        fill="#FC5C9C" />
+                    <path
+                        d="M38.24 72.502V91.38C38.24 92.554 39.202 93.516 40.376 93.516C41.55 93.516 42.512 92.554 42.512 91.38V72.502H38.24Z"
+                        fill="#FC5C9C" />
+                    <path
+                        d="M50.518 72.502H44.732L62.67 92.148C63.386 92.932 64.612 92.988 65.396 92.272L65.702 91.994C66.486 91.278 66.542 90.052 65.826 89.268L50.518 72.504V72.502Z"
+                        fill="#FC5C9C" />
+                    <path
+                        d="M67.932 29.692H12.82C8.57001 29.692 5.09201 33.17 5.09201 37.42V63.196C5.09201 67.446 8.57001 70.924 12.82 70.924H67.932C72.182 70.924 75.66 67.446 75.66 63.196V37.42C75.66 33.17 72.182 29.692 67.932 29.692ZM65.698 67.01H15.056C14.314 67.01 13.71 66.408 13.71 65.664C13.71 64.92 14.312 64.318 15.056 64.318H65.698C66.44 64.318 67.044 64.92 67.044 65.664C67.044 66.408 66.442 67.01 65.698 67.01Z"
+                        fill="#FC5C9C" />
+                    <path
+                        d="M95.292 30.22L77.336 37.266V63.354L95.292 70.4C96.064 70.66 96.862 70.086 96.862 69.272V31.352C96.862 30.538 96.064 29.964 95.292 30.224V30.22Z"
+                        fill="#FC5C9C" />
+                    <path
+                        d="M53.66 6.48395C47.848 6.48395 43.136 11.1959 43.136 17.0079C43.136 22.8199 47.848 27.5319 53.66 27.5319C59.472 27.5319 64.184 22.8199 64.184 17.0079C64.184 11.1959 59.472 6.48395 53.66 6.48395ZM53.66 25.8899C48.756 25.8899 44.78 21.9139 44.78 17.0099C44.78 12.1059 48.756 8.12995 53.66 8.12995C58.564 8.12995 62.54 12.1059 62.54 17.0099C62.54 21.9139 58.564 25.8899 53.66 25.8899Z"
+                        fill="#FC5C9C" />
+                    <path
+                        d="M24.62 1.53998C17.442 1.53998 11.624 7.35798 11.624 14.536C11.624 21.714 17.442 27.532 24.62 27.532C31.798 27.532 37.616 21.714 37.616 14.536C37.616 7.35798 31.798 1.53998 24.62 1.53998ZM24.62 25.502C18.564 25.502 13.654 20.592 13.654 14.536C13.654 8.47998 18.564 3.56998 24.62 3.56998C30.676 3.56998 35.586 8.47998 35.586 14.536C35.586 20.592 30.676 25.502 24.62 25.502Z"
+                        fill="#FC5C9C" />
+                </svg>
+
+
+                <div slot="content" class="FeaturedContent"
+                    style="align-self: stretch; padding: 10px; flex-direction: column; justify-content: center; align-items: flex-end; gap: 10px; display: inline-flex">
+
+                    <div id="ClipOfTheDay" class="Clipcontainer"
+                        style="align-self: stretch; padding: 10px; overflow: hidden; justify-content: center; align-items: flex-start; gap: 75px; display: inline-flex">
+
+                        <!-- randomly selected by script-->
+                        <slot name="ClipOfTheDay">
+                            
+                        </slot>
+
+                    </div>
+
+                </div>
+
         </div>
+
+        </content-container>
+
+    </div>
     </div>
     </div>
     </div>

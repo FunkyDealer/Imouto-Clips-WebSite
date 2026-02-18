@@ -4,15 +4,13 @@ const divOptions = {
 }
 
 const divObserveFunc = (entries) => {
-//console.log("observing:"); //works
     entries.forEach((entry) => {   
          
         if (entry.isIntersecting) {
              entry.target.classList.add('divShow'); 
             if (entry.target.classList.contains("divHiddenLeft")) entry.target.classList.remove('divHiddenLeft');
             else if (entry.target.classList.contains("divHiddenRight")) entry.target.classList.remove("divHiddenRight");
-            else if (entry.target.classList.contains("divHiddenDown")) entry.target.classList.remove("divHiddenDown");
-           // console.log("entry is intersecting: " + entry.target);                      
+            else if (entry.target.classList.contains("divHiddenDown")) entry.target.classList.remove("divHiddenDown");                 
         }
         // else {
         //     entry.target.classList.remove('cardShow');
@@ -27,7 +25,6 @@ const divObserver = new IntersectionObserver(
 );
 
 const observeDivs = () => {
-    console.log("Observing Divs");
     document.querySelectorAll('.divHiddenLeft:not(.observed)').forEach(myElement => {
         myElement.classList.add('observed');
         divObserver.observe(myElement);

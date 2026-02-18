@@ -11,6 +11,8 @@ class VtuberCard extends HTMLElement {
         const mainLink = this.getAttribute("mainLink") || "";
         this.attachShadow({ mode: "open" });
 
+        const size = 200;
+
         this.shadowRoot.innerHTML =
             `
              <link rel="stylesheet" href="style.css">
@@ -23,9 +25,9 @@ class VtuberCard extends HTMLElement {
             </style>
         
 <div class="VtuberCard">
-  <div id="img" class="VtuberImg" style="width: 180px; height: 180px; background: white; overflow: hidden; border-top-left-radius: 10px; border-top-right-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: center; display: flex">
+  <div id="img" class="VtuberImg" style="width: ${size}px; height: ${size}px; background: white; overflow: hidden; border-top-left-radius: 10px; border-top-right-radius: 10px; flex-direction: column; justify-content: flex-start; align-items: center; display: flex">
   <a href="${mainLink}" target="_blank">  
-  <img alt="${name}" style="width: 180px; height: 180px" src="${img}">
+  <img alt="${name}" style="width: ${size}px; height: ${size}px" src="${img}">
   </a>
   </div>
   <div  class="VtuberNameAndLinksDiv" style="align-self: stretch; overflow: hidden; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 5px; display: flex">
@@ -35,6 +37,9 @@ class VtuberCard extends HTMLElement {
     
     <div class="VtuberLinks" style="align-self: stretch; padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
       
+      <!-- Clip -->
+      <slot name="clip"></slot>
+
       <!-- YTLogo -->
       <slot name="YT"></slot>
 

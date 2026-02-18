@@ -1,6 +1,6 @@
 class Vtuber {
 
-    constructor(ID, ImgFileName, FullName, Name, AvailableBirthday, Day, Month, MainPlatform, Youtube, Twitch, Kick, Twitter, Category) {
+    constructor(ID, ImgFileName, FullName, Name, AvailableBirthday, Day, Month, MainPlatform, Youtube, Twitch, Kick, Twitter, Category, clip) {
         this.ID = ID;
         this.imgFileName = ImgFileName;
         this.fullName = FullName;
@@ -16,7 +16,8 @@ class Vtuber {
         const month = Month - 1;
         const day = Day;
         this.birthday = new Date(year, month, day);
-        this.Category = Category; //1. Hidden 2. Featured 3. Recommended
+        this.Category = Category; //0. Hidden 1. Featured 2. Recommended 3. birthdaysOnly
+        this.clip = clip;
     }
 
     Display() {
@@ -66,7 +67,7 @@ function readJson() {
             jsonData.forEach((v) => {
                 //create vtuber
                 if (v.category != 0) {
-                const vtuber = new Vtuber(v.ID, v.imgfileName, v.fullName, v.name, v.available_Birthday, v.birthday_Day, v.Birthday_Month, v.MainPlatform, v.youtube, v.twitch, v.kick, v.twitter, v.category);
+                const vtuber = new Vtuber(v.ID, v.imgfileName, v.fullName, v.name, v.available_Birthday, v.birthday_Day, v.Birthday_Month, v.MainPlatform, v.youtube, v.twitch, v.kick, v.twitter, v.category, v.featuredClip);
                 //place vtuber in the map
                 Vtubers.push(vtuber);
                 } 

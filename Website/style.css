@@ -164,7 +164,7 @@ body {
     padding-bottom: 4px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     display: inline-flex;
 }
@@ -357,4 +357,42 @@ body {
     to {
         transform: translateY(0%);
     }
+}
+
+.OpenYTModal {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.OpenYTModal .ColorSVGLinkSmall {
+
+    animation: shakeIcon 2.5s infinite ease-in-out;
+}
+
+@keyframes shakeIcon {
+
+
+    50%{
+        transform: rotate(0deg);
+    }
+    52.5%{
+        transform: rotate(-25deg);
+    }
+    55%{
+        transform: rotate(25deg);
+    }
+    57.5%{
+        transform: rotate(25deg);
+    }
+    60%{
+        transform: rotate(-25deg);
+    }
+    62.5%{
+        transform: rotate(0deg);
+    }
+}
+
+.VideoPlayerFrame {
+     border-radius: 15px;
 }

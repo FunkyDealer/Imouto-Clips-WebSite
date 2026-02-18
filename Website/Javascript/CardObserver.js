@@ -29,11 +29,11 @@ const testFunc = (entries) => {
 }
 
 const mutationObserver = new MutationObserver(() => {
-    console.log("Observing 1");
+    //console.log("Observing 1");
    // document.querySelectorAll('.card-row').forEach(myElement => testFunc(myElement));
     document.querySelectorAll('.cardHidden:not(.observed)').forEach(myElement => {
         myElement.classList.add('observed');
-        console.log("Observing 2");
+        //console.log("Observing 2");
         observer.observe(myElement);
     });
 });

@@ -12,7 +12,8 @@
     "twitch": "www.twitch.tv/elisiavt",
     "kick": "",
     "twitter": "www.x.com/elisia_vt",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/fbsbBlSisdA"
   },
   {
     "ID": 2,
@@ -27,7 +28,8 @@
     "twitch": "www.twitch.tv/yumanea_",
     "kick": "",
     "twitter": "www.x.com/yumanea_",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/of5SOqikXSk"
   },
   {
     "ID": 3,
@@ -42,7 +44,8 @@
     "twitch": "www.twitch.tv/unipiu",
     "kick": "",
     "twitter": "www.x.com/unipiVT",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/TJpeBMwxZS4"
   },
   {
     "ID": 4,
@@ -57,7 +60,8 @@
     "twitch": "www.twitch.tv/pokamipoka",
     "kick": "",
     "twitter": "www.x.com/poka_reborn",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/dlz7v2ubvdk"
   },
   {
     "ID": 5,
@@ -72,7 +76,8 @@
     "twitch": "www.twitch.tv/tenshimishie",
     "kick": "",
     "twitter": "www.x.com/tenshimishie",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/pG6t2Jw3TU0"
   },
   {
     "ID": 6,
@@ -87,7 +92,8 @@
     "twitch": "www.twitch.tv/kikipyonpyon",
     "kick": "",
     "twitter": "www.x.com/bunnyonvt",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/QXnm_n7WGeQ"
   },
   {
     "ID": 7,
@@ -102,7 +108,8 @@
     "twitch": "www.twitch.tv/mikanthemink",
     "kick": "",
     "twitter": "www.x.com/MikanTheMink",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/nYcN_FmSRgE"
   },
   {
     "ID": 8,
@@ -117,7 +124,8 @@
     "twitch": "www.twitch.tv/neppienep",
     "kick": "",
     "twitter": "www.x.com/neppie_nep",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/vDstUN1sWHY"
   },
   {
     "ID": 9,
@@ -132,7 +140,8 @@
     "twitch": "www.twitch.tv/ch4i",
     "kick": "",
     "twitter": "www.x.com/ch4ichan",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/Qi-LMX9klgs"
   },
   {
     "ID": 10,
@@ -147,7 +156,8 @@
     "twitch": "www.twitch.tv/mishymolly",
     "kick": "",
     "twitter": "www.x.com/mollymishy",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/uaUYTITIxeE"
   },
   {
     "ID": 11,
@@ -162,7 +172,8 @@
     "twitch": "www.twitch.tv/charlottexbear",
     "kick": "",
     "twitter": "www.x.com/Charlottexbear",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/0YpZ-SE7QwE"
   },
   {
     "ID": 12,
@@ -177,7 +188,8 @@
     "twitch": "www.twitch.tv/essie_ch",
     "kick": "",
     "twitter": "www.x.com/essie_ch",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/tDhVTb-CcG4"
   },
   {
     "ID": 13,
@@ -192,7 +204,8 @@
     "twitch": "www.twitch.tv/eirawoolcott",
     "kick": "",
     "twitter": "www.x.com/eira_ch",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/T_Ljg_DmerQ"
   },
   {
     "ID": 14,
@@ -207,7 +220,8 @@
     "twitch": "www.twitch.tv/cyphi",
     "kick": "",
     "twitter": "www.x.com/Cyphinya",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/rxQRq_fMk9E"
   },
   {
     "ID": 15,
@@ -222,7 +236,8 @@
     "twitch": "www.twitch.tv/arururosario",
     "kick": "",
     "twitter": "www.x.com/AruruRosario",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/-8KAwVhR3bU"
   },
   {
     "ID": 16,
@@ -237,7 +252,8 @@
     "twitch": "",
     "kick": "",
     "twitter": "www.x.com/NanakoNiku",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/-8KAwVhR3bU"
   },
   {
     "ID": 17,
@@ -252,25 +268,11 @@
     "twitch": "www.twitch.tv/miruku",
     "kick": "",
     "twitter": "www.x.com/MiruTheBear",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/G7gJdW7h6L4"
   },
   {
     "ID": 18,
-    "imgfileName": "Krum-01.jpg",
-    "fullName": "Krumroll",
-    "name": "Krumroll",
-    "available_Birthday": true,
-    "birthday_Day": 8,
-    "Birthday_Month": 11,
-    "MainPlatform": 1,
-    "youtube": "www.youtube.com/@krumroll",
-    "twitch": "www.twitch.tv/krumroll",
-    "kick": "",
-    "twitter": "www.x.com/krumroll",
-    "category": 1
-  },
-  {
-    "ID": 19,
     "imgfileName": "Nino-01.jpg",
     "fullName": "Nino Egyn",
     "name": "Nino",
@@ -282,7 +284,24 @@
     "twitch": "www.twitch.tv/ninoegyn",
     "kick": "",
     "twitter": "www.x.com/xXninoegynXx",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/9B3RA2km4F8"
+  },
+  {
+    "ID": 19,
+    "imgfileName": "Krum-01.jpg",
+    "fullName": "Krumroll",
+    "name": "Krumroll",
+    "available_Birthday": true,
+    "birthday_Day": 8,
+    "Birthday_Month": 11,
+    "MainPlatform": 1,
+    "youtube": "www.youtube.com/@krumroll",
+    "twitch": "www.twitch.tv/krumroll",
+    "kick": "",
+    "twitter": "www.x.com/krumroll",
+    "category": 1,
+    "featuredClip": null
   },
   {
     "ID": 20,
@@ -297,7 +316,8 @@
     "twitch": "www.twitch.tv/parasi",
     "kick": "",
     "twitter": "www.x.com/wwparasiVT",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/f4zePSXna2A"
   },
   {
     "ID": 21,
@@ -312,7 +332,8 @@
     "twitch": "www.twitch.tv/Miaelou",
     "kick": "",
     "twitter": "www.x.com/Miaelou_VT",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/ClmZVh5tvnM"
   },
   {
     "ID": 22,
@@ -327,13 +348,14 @@
     "twitch": "www.twitch.tv/nekumavt",
     "kick": "",
     "twitter": "www.x.com/NekumaVT",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/GAA279xGeNo"
   },
   {
     "ID": 23,
     "imgfileName": "mitty-01.jpg",
-    "fullName": "Mity",
-    "name": "Mity",
+    "fullName": "Mitty",
+    "name": "Mitty",
     "available_Birthday": false,
     "birthday_Day": 30,
     "Birthday_Month": 1,
@@ -342,7 +364,8 @@
     "twitch": "www.twitch.tv/mittydotexe",
     "kick": "",
     "twitter": "www.x.com/MittyDotX",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/2pMdyqRx2zY"
   },
   {
     "ID": 24,
@@ -357,7 +380,8 @@
     "twitch": "www.twitch.tv/chromuchromu",
     "kick": "",
     "twitter": "www.x.com/chromuchromu",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/MK7n8Rd3nPQ"
   },
   {
     "ID": 25,
@@ -372,7 +396,8 @@
     "twitch": "",
     "kick": "",
     "twitter": "",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/GQC7ukpTPD8"
   },
   {
     "ID": 26,
@@ -387,7 +412,8 @@
     "twitch": "www.twitch.tv/irinakumai",
     "kick": "",
     "twitter": "www.x.com/IrinaKumai",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/HvI51Vm-kPw"
   },
   {
     "ID": 27,
@@ -402,7 +428,8 @@
     "twitch": "www.twitch.tv/yumitomomi",
     "kick": "",
     "twitter": "www.x.com/YumiTomomi",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/k4cz0yTn4VI"
   },
   {
     "ID": 28,
@@ -417,7 +444,8 @@
     "twitch": "www.twitch.tv/cecihime",
     "kick": "",
     "twitter": "www.x.com/CeciHime",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/O_wqjMxJosw"
   },
   {
     "ID": 29,
@@ -432,7 +460,8 @@
     "twitch": "www.twitch.tv/nemimiyane",
     "kick": "",
     "twitter": "www.x.com/NemimiYane",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/JPsfZwGNQjY"
   },
   {
     "ID": 30,
@@ -447,7 +476,8 @@
     "twitch": "",
     "kick": "",
     "twitter": "www.x.com/kumakkomoto",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/hOdbCZTxPGw"
   },
   {
     "ID": 31,
@@ -462,7 +492,8 @@
     "twitch": "",
     "kick": "",
     "twitter": "www.x.com/acti_matatabi",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/cqlPoiuLxiE"
   },
   {
     "ID": 32,
@@ -477,7 +508,8 @@
     "twitch": "www.twitch.tv/pixywixy",
     "kick": "",
     "twitter": "www.x.com/PixyWixyVT",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/Ll1EPqNZfUA"
   },
   {
     "ID": 33,
@@ -492,7 +524,8 @@
     "twitch": "",
     "kick": "",
     "twitter": "www.x.com/kirariyagi",
-    "category": 1
+    "category": 1,
+    "featuredClip": "www.youtube.com/embed/e_1aaHiW8s4"
   },
   {
     "ID": 34,
@@ -507,7 +540,8 @@
     "twitch": "www.twitch.tv/ShimoHisae",
     "kick": "",
     "twitter": "www.x.com/ShimoHisae",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 35,
@@ -522,7 +556,8 @@
     "twitch": "www.twitch.tv/DiankoLastrea",
     "kick": "",
     "twitter": "www.twitter.com/DiankoLastrea",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 36,
@@ -537,7 +572,8 @@
     "twitch": "www.twitch.tv/tomoshi_exe",
     "kick": "",
     "twitter": "www.x.com/tomoshi_exe",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 37,
@@ -552,7 +588,8 @@
     "twitch": "www.twitch.tv/umeaino",
     "kick": "",
     "twitter": "www.x.com/umeaino",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 38,
@@ -567,7 +604,8 @@
     "twitch": "www.twitch.tv/khubie",
     "kick": "",
     "twitter": "www.x.com/khubiez",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 39,
@@ -582,7 +620,8 @@
     "twitch": "www.twitch.tv/rena_chuu",
     "kick": "",
     "twitter": "www.x.com/rena_dreamstar",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 40,
@@ -597,7 +636,8 @@
     "twitch": "www.twitch.tv/smulchypansie",
     "kick": "",
     "twitter": "www.x.com/SmulchyPansie",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   },
   {
     "ID": 41,
@@ -612,7 +652,8 @@
     "twitch": "www.twitch.tv/zuzumizuchi",
     "kick": "",
     "twitter": "www.x.com/zuzumizuchi",
-    "category": 0
+    "category": 0,
+    "featuredClip": null
   },
   {
     "ID": 42,
@@ -627,6 +668,7 @@
     "twitch": "www.twitch.tv/tomimimoruru",
     "kick": "",
     "twitter": "www.x.com/tomimimoruru",
-    "category": 2
+    "category": 2,
+    "featuredClip": null
   }
 ]

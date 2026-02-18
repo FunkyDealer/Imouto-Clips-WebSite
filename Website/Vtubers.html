@@ -7,11 +7,13 @@
     <title>Vtubers</title>
     <link rel="icon" type="image/x-icon" href="Images\Imouto-Clips-Logo-Small.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/Modal.css">
     <script src="Components/Header.js" defer></script>
     <script src="Components/Navigation/Navigation.js" defer></script>
     <script src="Components/Navigation/NavButton.js" defer></script>
     <script src="Components/MoreButton.js" defer></script>
     <script src="Components/Footer.js" defer></script>
+    <script src="Components/Modal/ModalComponent.js" defer></script>
     <script src="Components/ContentContainer.js" defer></script>
     <script src="Components/PageTitle.js" defer></script>
     <script src="Components/Cards/VtuberCard.js" defer></script>
@@ -22,6 +24,22 @@
 </head>
 
 <body>
+
+    <modal-component width="880">
+
+    <div slot="title"  class="TitleContainer" style="width: 880px; height: 77px; padding-bottom: 10px; left: 0px; top: 0px; position: absolute; overflow: hidden; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
+      <div id="title" class="Talentname" style="text-align: center; justify-content: center; display: flex; flex-direction: column; color: white"><h1>Tenshie Mishie</h1></div>
+    </div>
+  </div>
+
+  <div slot="content" id="videoFrame" data-layer="ModalVideoContainer" class="Modalvideocontainer">
+    <slot name="videoFrame">
+        <img style="width: 880px; height: 495px" src="https://placehold.co/880x495"/>
+    </slot>   
+  </div>
+
+   </modal-component>
+
 
     <header-component></header-component>
     <div class="ContentMain">
